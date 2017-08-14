@@ -1,0 +1,28 @@
+Familywise error rate (FWER) - Rank p-values, reject first at .05/m,
+reject second at .05/(m-1), third at .05/(m-2), etc.
+
+Argument against FWER is that it increases Type II error as
+significance depends on the number of other tests done. Also suffer
+from reduced power.
+
+Instead, control for false discovery rate (FDR) using
+Benjamini-Hochberg (BH) procedure.
+
+Bonferroni - 95% certainty there are NO false discoveries.
+
+FDR/BH - At most 5% of signifant findings are false discoveries. (If
+further citation needed, Benjamini & Hochberg, 1995.) If a large
+number of tests, P(At least one false discovery) increases, but only
+5% of those discoveries will be false.
+
+Methodologies:
+
+Order all p-values from low to high. Say there are m total p-values.
+
+Bonferroni FWER: Reject lowest p-value at .05/m. Reject second lowest
+p-value at .05/(m-1). Etc. Reject highest p-value at .05/(m-[m-1]) =
+.05.
+
+BH FDR: Reject lower p-value at 1*.05/m. Reject second lowest p-value
+at 2*.05/m. Reject third lowest p-value at 3*.05/m. Etc. Reject
+highest p-value at m*.05/m = .05.

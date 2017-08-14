@@ -1,0 +1,11 @@
+Lists around 40 different reasons why a "wrong sign" can be obtained,
+and offers very brief advice on addressing it. It is published in the
+Econ literature so is specific there, but does offer a lot of general
+results.
+
+Categories of examples include:
+- Bad theory (the assumed sign is wrong, the observed sign is correct).
+- Bad interpretation (e.g. a regression holds all else constant)
+- Bad data
+- Econometric issues
+- Statistical issues (e.g. outliers, measurement error)

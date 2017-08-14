@@ -1,0 +1,35 @@
+tldr: If two CI's don't overlap, you can reject the null that point
+estimates are the same. If they don't overlap, you need to test the
+hypothesis that x1 - x2 = 0.
+
+
+If viewing two confidence intervals for two point estimates, it is a
+common practice to see whether the confidence intervals overlap;
+failure to overlap provides evidence that the two points differ
+statistically.
+
+Call this method the "overlap method" and call hypothesis testing (x1
+- x2) = 0 as the "standard method".
+
+If the overlap method rejects, then the standard method rejects.
+(If the two CI's don't overlap, a hypothesis test will find a
+significant difference.)
+
+If the overlap method fails to reject, then the standard method may
+reject or not reject.
+(If the two CI's reject, we don't know what a hypothesis test will
+do.)
+
+Two CI's can overlap and a hypothesis test still find them
+signficant. This is more likely when the standard error of each point
+is simialr (e.g. the amount of overlap for which the hypothesis test
+fails to reject is largest if the CI's are of equal width).
+
+
+A different approach - reject if neither CI contains the other point
+estimate - has issues the other way. No overlap here does not imply
+significance in the hypothesis test.
+
+
+Correlation between the point estimates makes the problem
+worse. (Above was assuming independence.)

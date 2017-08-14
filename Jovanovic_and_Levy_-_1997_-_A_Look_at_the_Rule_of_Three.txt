@@ -1,0 +1,12 @@
+A justification for the Rule of Three. If you observe no successes in
+n trials, what is a confidence interval for p? (If all successes,
+define success as failure and take 1-end result.)
+
+By Poisson distribution: Exact CI is (0, -ln(.05)/n).
+
+By Binomial distribution: Exact CI is (0, 1 - .05^(1/n)).
+
+Rule of Three is 3/n. Adjusted Rule of Three is 3/(n+1).
+
+For n > 100, all roughly equivalent. For small sample sizes, 3/(n+1)
+is slightly preferred.

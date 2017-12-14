@@ -1,0 +1,6 @@
+A simulation showing when categorical variables can be treated as
+continuous without bias. Specifically for CFA. Conclusion:
+
+"Our findings confirm that when observed variables have fewer than
+five categories, robust categorical methodology is best. With five to
+seven categories, both methods yield acceptable performance."

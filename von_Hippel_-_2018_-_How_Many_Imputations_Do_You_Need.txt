@@ -1,0 +1,38 @@
+Rebuttal of the typical "m = 5 imputations" recommendation.
+
+The m = 5 (or as this paper puts it, 2-10) is sufficient for
+efficienct estimation of point estimation, not for standard error of
+point estimate. Suggests m = 200 for sample sizes where this
+reasonable.
+
+Introduces a two-stage procedure.
+
+1) Perform a "pilot" MI on 5-20 imputations. Using the fraction of
+   missing information [1 - var(point estimate | complete
+   data)/var(point estimate | M imputations)], calculate how many
+   total imputations are needed.  Specifically, use a "conservative"
+   fraction of missing information, based on CI (so larger M in pilot
+   will lead to more precision in M for follow-up.)
+
+2) Use the new M to run the imputation.
+
+Fraction of missing information is NOT % of missing data, however, you
+can get rough estimates. The rule of thumb I get out of this is that
+
+For little missing information, use m = 50.
+For moderate missing information, use m = 200.
+For large missing information, use m = 400.
+
+
+The quadratic rule is 200*(fraction of missing information)^2.
+
+Implemented in Stata via `how_many_imputations`:
+
+```
+webuse mheart1s0, clear
+mi impute regress bmi attack smokes age female hsgrad, replace add(10)
+mi estimate: logit attack bmi smokes age female hsgrad
+how_many_imputations, cv_se(.01)
+mi impute regress bmi attack smokes age female hsgrad, add(`r(add_M)')
+mi estimate: logit attack bmi smokes age female hsgrad
+```

@@ -1,0 +1,3 @@
+Methodology and link to a tool to perform MCMC for power analysis of mediation model.
+
+Link: https://schoemanna.shinyapps.io/mc_power_med/

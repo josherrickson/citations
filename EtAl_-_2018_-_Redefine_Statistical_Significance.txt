@@ -1,0 +1,7 @@
+Suggest using .005 instead of .05 for significance in exploratory analysis.
+
+Suggesting calling .005 < p < .05 as "suggestive".
+
+Part of the rational: P(H1|X)/P(H0|X) is prior odds or bayes
+factor. .05 corresponds to prior odds around 2.5-3.5. .005 corresponds
+instead of around 14-25.

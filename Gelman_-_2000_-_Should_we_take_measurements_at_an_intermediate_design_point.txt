@@ -1,0 +1,5 @@
+Investigates whether collecting an intermediate data point is worth
+doing (as opposed to collecting larger sample size at start and
+end). Conclusion is that it is not worth collecting the intermediate
+data point UNLESS sample size is very large AND non-linearity is
+assumed very strong.

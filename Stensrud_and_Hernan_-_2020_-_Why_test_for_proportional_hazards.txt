@@ -1,0 +1,4 @@
+Claims:
+- Hazards are never proportional; failure to reject PH-tests implies lack of power.
+- Use bootstrap to properly estimate SE's (other sources suggested robust SE).
+- "a hazard ratio from a Cox model needs to be interpreted as a weighted average of the true hazard ratios over the entire follow-up period."

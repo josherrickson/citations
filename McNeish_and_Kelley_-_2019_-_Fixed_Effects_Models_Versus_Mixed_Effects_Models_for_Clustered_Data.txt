@@ -1,0 +1,11 @@
+Provides a discussion of what to use mixed models and when to use fixed effects models.
+
+The big argument for fixed effects is omitted variable bias and
+endogeneity at level 2 does not impact level 1 estimates. Also a lesser argument that
+<30 clusters is bad for mixed model.
+
+They also suggest a "within-between mixed model", e.g. group-mean centering predictors and also including group means as predictors. E.g. something like
+
+y_ij = ... + beta*(x_ij - xbar_j) + alpha*xbar_j
+
+This splits within and between completely.

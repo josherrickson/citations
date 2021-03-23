@@ -1,0 +1,8 @@
+Model estimates were usually robust to violations of assumptions, with the
+exception of slight upward biases in estimates of random effect variance if the
+generating distribution was bimodal but was modelled by Gaussian error
+distributions. Further, estimates for (random effect) components that violated
+distributional assumptions became less precise but remained unbiased. However,
+this particular problem did not affect other parameters of the model.
+
+E.g. normality is not important!

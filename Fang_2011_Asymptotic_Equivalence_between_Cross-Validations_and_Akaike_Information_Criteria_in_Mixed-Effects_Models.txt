@@ -1,0 +1,1 @@
+Shows that LOOCV is asymptotically equivalent to AIC when used to choose between mixed effects models.

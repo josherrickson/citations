@@ -1,0 +1,3 @@
+Page(s) | Content
+========|=======================================================================
+4-5     | Argument against binning continuous variables.

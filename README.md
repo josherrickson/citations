@@ -1,0 +1,1 @@
+This content has been superceded by [https://github.com/josherrickson/useful-references/](https://github.com/josherrickson/useful-references/)/[https://errickson.net/useful-references/](https://errickson.net/useful-references/).
